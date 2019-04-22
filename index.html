@@ -3,16 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<title>@ViewData["Title"] - blakemorewalkerWebApp</title>-->
 
-    <link rel="stylesheet" href="lib2/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="css/Stylesheet.css" />
-    <link rel="stylesheet" href="lib2/bootstrap/dist/css/bootstrap.min.css" />
-    <!--asp-fallback-href="../lib2/bootstrap/dist/css/bootstrap.min.css"
-    asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" -->
-
+    <link rel="stylesheet" href="lib2/bootstrap/dist/css/bootstrap.min.css" />    
     <link rel="stylesheet" href="css/site.min.css" asp-append-version="true" />
-
+    <link rel="stylesheet" href="css/Stylesheet.css" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
@@ -21,69 +15,12 @@
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#f8f9fa">
-
-
 </head>
+
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container h-100">
-            <a class="navbar-brand" href="/">Blakemore Walker</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse h-100" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto h-100">
-                    <li class="nav-item h-100">
-                        <!--<a class="nav-link" href=@Url.Action("About","Home")>About</a>-->
-                        <a class="nav-link" href="">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Portfolio
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Other Pages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                            <a class="dropdown-item" href="faq.html">FAQ</a>
-                            <a class="dropdown-item" href="404.html">404</a>
-                            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
+        <nav id= "nav-placeholder" class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top"></nav>
+    
     <!--@RenderSection("OutOfContainer")-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -136,12 +73,12 @@
             <br />
              <!-- Marketing Icons Section -->
              <div class="row">
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-lg-3 mb-4" style="width: 21rem">
                         <div class="card h-100 shadow-sm">
                             <h4 class="card-header">Buying</h4>
                             <div class="card-img">
                                 <a href="buying.html">
-                                    <img src="images/buy2.png" class="h-100 w-100">
+                                    <img src="images/buy.png" class="h-100 w-100" />
                                 </a>
                             </div>
                             <div class="card-body">
@@ -149,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-lg-3 mb-4" style="width: 21rem">
                         <div class="card h-100 shadow-sm">
                             <h4 class="card-header">Selling</h4>
                             <div class="card-img">
@@ -162,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-lg-3 mb-4" style="width: 21rem">
                         <div class="card h-100 shadow-sm">
                             <h4 class="card-header">Legal</h4>
                             <div class="card-img">
@@ -175,7 +112,7 @@
                             </div>                        
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-lg-3 mb-4" style="width: 21rem">
                         <div class="card h-100 shadow-sm">
                             <h4 class="card-header">Surveys</h4>
                             <div class="card-img">
@@ -231,14 +168,13 @@
             <p>&copy; 2019 - blakemorewalkerWebApp</p>
         </footer>
     </div>
-
-
-    <script src="lib2/jquery/dist/jquery.js"></script>
-    <script src="lib2/bootstrap/dist/js/bootstrap.js"></script>
-    <!--<script src="../js/site.js" asp-append-version="true"></script>-->
-
-    <script src="lib2/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="lib2/jquery/dist/jquery.min.js"></script>
+    
+    
 
 </body>
+
+<script src="lib2/jquery/dist/jquery.min.js"></script>
+<script src="lib2/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src = "js/site.js"></script>
+
 </html>

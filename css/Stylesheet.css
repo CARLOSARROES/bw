@@ -32,20 +32,16 @@
     overflow: hidden;
 }
 
-    .card-img img {
-        transition: all 1.5s ease;
-    }
+.card-img img {
+    transition: all 1.5s ease;
+}
 
-    .card-img:hover img {
-        transform: scale(1.2);
-    }
+.card-img:hover img {
+    transform: scale(1.2);
+}
 
-
-
-
-.navbar-nav > li:hover {
-    /*background-color: #33691E;*/
-    background-color: #dcedc8;
+.nav-link {
+    padding: 1rem 1rem;
 }
 
 .card-header {
@@ -55,4 +51,15 @@
 .body-content{
     background-color:white;
     
+}
+
+
+/* only for pc screens  */
+@media screen and (min-width: 769px) {
+
+    .navbar-nav > li:hover {        
+        background-color: #dcedc8;
+    }
+
+   
 }
