@@ -28,6 +28,13 @@
     margin-bottom: 30px;
 }
 
+.card{
+    background: #00695c
+}
+.card-title{
+    color: white
+}
+
 .card-img {
     overflow: hidden;
 }
@@ -54,12 +61,49 @@
 }
 
 
+
 /* only for pc screens  */
 @media screen and (min-width: 769px) {
 
     .navbar-nav > li:hover {        
-        background-color: #dcedc8;
+        /* background-color: #dcedc8; */
+        background-color: rgba(0,0,0,0.05);
     }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;        
+        overflow: hidden;
+        width: 100%;
+        height: 4rem;
+        transition: 1.5s ease;
+        
+      }
+      p.card-text{
+        
+        background: -webkit-linear-gradient(top, white , transparent); 
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;       
+        
+      }
+      .card:hover .overlay {
+        height: 90%;        
+        background: -webkit-linear-gradient(top, white , white); 
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;        
+      }
+
+      .card-title{        
+        transition: 1s ease;
+    }
+      .card:hover .card-title{
+          color: transparent;
+          transition: 1s ease;
+      }
 
    
 }
